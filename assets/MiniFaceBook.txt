@@ -1,0 +1,27 @@
+
+
+
+1- Using this endpoint need to authenticate users only using the email. 
+https://jsonplaceholder.typicode.com/users/1/2
+
+
+2- Once User successfully logs in, then redirect the user to the new page. (his/her profile)
+Show currently logged in user’s email in the navbar.
+
+3- By default all the posts of that user will be displayed on the profile using below url:
+https://jsonplaceholder.typicode.com/posts
+
+4- Below each post there will be a “Comments” buttons, once user clicks the button then all the comments related to that post should be populated. You have to consume below mentioned url:
+https://jsonplaceholder.typicode.com/comments
+
+5-  On the navbar there will be an Album button once user clicks on that button then the new page i.e. Albums will be displayed as mentioned in the attachment. And all the albums of currently logged in user should be displayed. You have to use below mentioned url:
+https://jsonplaceholder.typicode.com/albums
+
+6-  When user clicks on each album all the photos within that album should be displayed with the thumbnails. Below mentioned url will be consumed:
+https://jsonplaceholder.typicode.com/photos
+
+7-  When user clicks on profile settings button on navbar then personal details of user should be loaded in the new page. 
+
+
+
+NOTE: You can use AJAX XHR to consume above mentioned api which we studied yesterday. Or you use any other  technique (that is optional)

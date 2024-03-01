@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <img src="./assets/Screenshot (94).png" alt="Logo" class="logo" />
+      <!-- Login form -->
+      <form id="loginForm" class="login-form">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="email" required />
+        </div>
+        <div class="input-group">
+          <button onclick="userlogged()" type="button">Login</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      async function fetchUserData() {
+        try {
+          const response = await fetch(
+            "https://jsonplaceholder.typicode.com/users"
+          );
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error("Error fetching user data:", error);
+          throw new Error("Failed to fetch user data");
+        }
+      }
+
+      async function userlogged() {
+        const loginEmail = document.getElementById("loginEmail").value;
+        try {
+          const userData = await fetchUserData();
+          const userFound = userData.find((user) => user.email === loginEmail);
+          console.log("ok ", userFound.email);
+          if (userFound) {
+            
+            localStorage.setItem("userEmail", userFound.email);
+            localStorage.setItem("userId", userFound.id);
+            alert("Login successful! Redirecting to the product page...");
+            window.location.href = "account.html";
+          } else {
+            alert("Invalid email. Please try again or sign up.");
+          }
+        } catch (error) {
+          alert("Failed to log in. Please try again later.");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+

@@ -1,0 +1,177 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+  
+  /* Body */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    background-color: #6C63FF;
+    padding: 15px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  ul > li{
+    border: 2px solid rgb(34, 28, 28);
+    background-color: #2017d5;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  .links li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  .links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links li a:hover {
+    background-color: #524dff;
+  }
+  
+  /* Products Container */
+  .products-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .products-cards {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .products-cards h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .products-cards p {
+    color: #666;
+  }
+  
+  .info-button {
+    background-color: #6C63FF;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .info-button:hover {
+    background-color: #524dff;
+  }
+  
+  /* Comments Section */
+  .comments-section {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 15px;
+  }
+  
+  .comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .comment p {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .comment strong {
+    font-weight: 600;
+    color: #6C63FF;
+  }
+  
+
+  /* Add this CSS to your existing styles */
+
+/* Album Page */
+.album-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.album-title {
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.album-title:hover {
+  color: #6C63FF;
+}
+
+.photos-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.photos-section img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

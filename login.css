@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('hacker_bg.jpg'), linear-gradient(to bottom right, #000000, #333333); /* Background image and gradient */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 400px;
+width: 500px;
+ display: flex;
+ flex-direction: column;
+    gap: 83px;
+    height: 50vh;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+position: relative;
+bottom: 50px;
+    color: #00ff00; /* Green text color */
+}
+
+label {
+position: relative;
+bottom: 30px;
+    display: block;
+    color: #00ff00; /* Green text color */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 5px;
+    background-color: #333; /* Dark input background color */
+    position: relative;
+    bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+button[type="submit"],
+button[type="button"] {
+    width:300px;
+    border: none;
+    margin-top: 14px;
+    margin-left: 12px;
+   height: 40px;
+    border-radius: 5px;
+    background-color: #00ff00; /* Green button background color */
+    color: #0e0b0b; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #009900; /* Darker green on hover */
+}
+
+p {
+    margin-top: 8px;
+    text-align: center;
+    color: #00ff00; /* Green text color */
+}
+
+a {
+    color: #00ff00; /* Green link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 200px;
+ margin-left: 100px;
+    margin-bottom: 20px;
+}
